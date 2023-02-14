@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://localhost:5000/deposit" method="post">
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm"><button type="submit">Deposit</button></span>
+            <input type="number" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm" name="deposit">
+        </div>
+    </form>
+
+    <form action="http://localhost:5000/withdraw" method="post">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default"><button type="submit">Withdraw</button></span>
+            <input type="number" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default" name="withdraw">
+        </div>
+    </form>
+
+    <form action="http://localhost:5000/balance" method="get">
+        <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg"><button type="submit" name="balance">Balance</button></span>
+        </div>
+    </form>
+</body>
+
+</html>
